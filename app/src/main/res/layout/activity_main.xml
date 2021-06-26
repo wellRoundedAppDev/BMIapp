@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/weight_textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_eight"
+        android:gravity="center"
+        android:hint="@string/str_weightTextview"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_30"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/height_textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_eight"
+        android:gravity="center"
+        android:hint="@string/str_heightTextview"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_30"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/calculateBMI_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_eight"
+        android:text="@string/str_calculateButton"
+        android:textSize="@dimen/textSize_30" />
+
+    <TextView
+        android:id="@+id/BMI_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_eight"
+        android:fontFamily="sans-serif-black"
+        android:textSize="@dimen/textSize_30"
+        android:textStyle="bold"
+        tools:text="19"/>
+
+    <ImageView
+        android:id="@+id/bodySize_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_eight"
+        tools:srcCompat = "@drawable/ic_healthy"
+        android:contentDescription="@string/str_ImageDescription" />
+
+
+</LinearLayout>
